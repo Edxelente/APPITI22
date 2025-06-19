@@ -34,8 +34,8 @@ export class InicioPage {
       icon: 'card-outline'
     },
     {
-      name: 'Prueba',
-      redirectTo: '',
+      name: 'DateTime',
+      redirectTo: '/datetime',
       icon: 'document-outline'
     },
     {
