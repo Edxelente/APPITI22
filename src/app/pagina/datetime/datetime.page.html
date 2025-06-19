@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>datetime</ion-title>
+    <ion-buttons slot="end">
+        <ion-back-button defaultHref="/inicio" text="Atras" color="tertiary"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-datetime  
+   id="fechaActual"
+  (ionChange)="fechaCambio($event)"
+  ></ion-datetime>
+</ion-content> 
+

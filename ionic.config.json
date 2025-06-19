@@ -1,0 +1,7 @@
+{
+  "name": "APPITI22Tab",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
