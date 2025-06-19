@@ -39,8 +39,8 @@ export class InicioPage {
       icon: 'document-outline'
     },
     {
-      name: 'Prueba',
-      redirectTo: '',
+      name: 'CheckBox',
+      redirectTo: '/checkbox',
       icon: 'document-outline'
     }
   ]
