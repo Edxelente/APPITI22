@@ -25,13 +25,21 @@ export class CheckboxPage implements OnInit {
   }
 
 infoNombres: Alumno[] = [
-  {
+{
   name: 'Edxel Villarreal',
   beca: 'false'
 },
-  {
+{
   name: 'Yahir Lopez',
+  beca: 'true'
+},
+{
+  name: 'Edxel Lopez',
   beca: 'false'
-}
+},
+{
+  name: 'Yahir Villarreal',
+  beca: 'true'
+},
 ]
 }

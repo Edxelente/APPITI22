@@ -1,12 +1,12 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
 :root {
-	--ion-color-linke: #0054e9;
-	--ion-color-linke-rgb: 0,84,233;
+	--ion-color-linke: #004f80;
+	--ion-color-linke-rgb: 0,79,128;
 	--ion-color-linke-contrast: #ffffff;
 	--ion-color-linke-contrast-rgb: 255,255,255;
-	--ion-color-linke-shade: #004acd;
-	--ion-color-linke-tint: #1a65eb;
+	--ion-color-linke-shade: #004671;
+	--ion-color-linke-tint: #1a618d;
 
     --ion-color-whats: #097e07;
 	--ion-color-whats-rgb: 9,126,7;
@@ -14,6 +14,20 @@
 	--ion-color-whats-contrast-rgb: 255,255,255;
 	--ion-color-whats-shade: #086f06;
 	--ion-color-whats-tint: #228b20;
+
+	--ion-color-twitter: #00e7eb;
+	--ion-color-twitter-rgb: 0,231,235;
+	--ion-color-twitter-contrast: #000000;
+	--ion-color-twitter-contrast-rgb: 0,0,0;
+	--ion-color-twitter-shade: #00cbcf;
+	--ion-color-twitter-tint: #1ae9ed;
+
+	--ion-color-face: #073c64;
+	--ion-color-face-rgb: 7,60,100;
+	--ion-color-face-contrast: #ffffff;
+	--ion-color-face-contrast-rgb: 255,255,255;
+	--ion-color-face-shade: #063558;
+	--ion-color-face-tint: #205074;
 }
 
 .ion-color-linke{
@@ -31,4 +45,20 @@
 	--ion-color-base-contrast-rgb:var(--ion-color-whats-contrast-rgb)!important;
 	--ion-color-base-shade:var(--ion-color-whats-shade)!important;
 	--ion-color-base-tint:var(--ion-color-whats-tint)!important;
+}
+	.ion-color-twitter{
+	--ion-color-base:var(--ion-color-twitter) !important;
+	--ion-color-base-rgb:var(--ion-color-twitter-rgb:)!important;
+	--ion-color-base-contrast:var(--ion-color-twitter-contrast)!important;
+	--ion-color-base-contrast-rgb:var(--ion-color-twitter-contrast-rgb)!important;
+	--ion-color-base-shade:var(--ion-color-twitter-shade)!important;
+	--ion-color-base-tint:var(--ion-color-twitter-tint)!important;
+}
+	.ion-color-face{
+	--ion-color-base:var(--ion-color-face) !important;
+	--ion-color-base-rgb:var(--ion-color-face-rgb:)!important;
+	--ion-color-base-contrast:var(--ion-color-face-contrast)!important;
+	--ion-color-base-contrast-rgb:var(--ion-color-face-contrast-rgb)!important;
+	--ion-color-base-shade:var(--ion-color-face-shade)!important;
+	--ion-color-base-tint:var(--ion-color-face-tint)!important;
 }
