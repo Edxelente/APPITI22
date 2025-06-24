@@ -1,18 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>fab</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="Fab"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">fab</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-fab>
-  <ion-fab-button>
-    <ion-icon name="add"></ion-icon>
-  </ion-fab-button>
+ <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
   </ion-fab>
-</ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let item of items; let i = index">
+      <ion-label>hola{{i+1}}</ion-label>
+    </ion-item>
+  </ion-list>

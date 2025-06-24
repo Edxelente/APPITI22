@@ -36,13 +36,28 @@ export class InicioPage {
     {
       name: 'DateTime',
       redirectTo: '/datetime',
-      icon: 'document-outline'
+      icon: 'calendar-outline'
     },
     {
       name: 'CheckBox',
       redirectTo: '/checkbox',
+      icon: 'checkbox-outline'
+    },
+    {
+      name: 'Fab',
+      redirectTo: '/fab',
+      icon: 'list-outline'
+    },
+        {
+      name: 'Prueba',
+      redirectTo: '',
       icon: 'document-outline'
-    }
+    },
+        {
+      name: 'Prueba',
+      redirectTo: '',
+      icon: 'document-outline'
+    },
   ]
 
 }

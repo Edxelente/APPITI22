@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { FabPageRoutingModule } from './fab-routing.module';
 
 import { FabPage } from './fab.page';
+import { ComponentesModule } from 'src/app/componentes/componentes.module';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { FabPage } from './fab.page';
     IonicModule,
     FabPageRoutingModule,
     FabPage,
+    ComponentesModule
   ],
 })
 export class FabPageModule {}
