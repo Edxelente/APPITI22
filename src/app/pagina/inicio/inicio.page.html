@@ -15,7 +15,8 @@
    <ion-button routerLink="/card">Card</ion-button>
    <ion-button routerLink="/datetime">Date Time</ion-button>
    <ion-button routerLink="/checkbox">Check Box</ion-button>
-      <ion-button routerLink="/fab">Fab</ion-button>
+   <ion-button routerLink="/fab">Fab</ion-button>
+   <ion-button routerLink="/grid">Grid</ion-button>
   <ion-list>
     <ion-item *ngFor="let elemento of Elementos" [routerLink]="elemento.redirectTo" detail>
       <ion-icon [name]="elemento.icon" slot="start" color="tertiary"></ion-icon>

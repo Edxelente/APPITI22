@@ -1,2 +1,34 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root {
+	--ion-color-linke: #0054e9;
+	--ion-color-linke-rgb: 0,84,233;
+	--ion-color-linke-contrast: #ffffff;
+	--ion-color-linke-contrast-rgb: 255,255,255;
+	--ion-color-linke-shade: #004acd;
+	--ion-color-linke-tint: #1a65eb;
+
+    --ion-color-whats: #097e07;
+	--ion-color-whats-rgb: 9,126,7;
+	--ion-color-whats-contrast: #ffffff;
+	--ion-color-whats-contrast-rgb: 255,255,255;
+	--ion-color-whats-shade: #086f06;
+	--ion-color-whats-tint: #228b20;
+}
+
+.ion-color-linke{
+	--ion-color-base:var(--ion-color-linke) !important;
+	--ion-color-base-rgb:var(--ion-color-linke-rgb:)!important;
+	--ion-color-base-contrast:var(--ion-color-linke-contrast)!important;
+	--ion-color-base-contrast-rgb:var(--ion-color-linke-contrast-rgb)!important;
+	--ion-color-base-shade:var(--ion-color-linke-shade)!important;
+	--ion-color-base-tint:var(--ion-color-linke-tint)!important;
+}
+.ion-color-whats{
+	--ion-color-base:var(--ion-color-whats) !important;
+	--ion-color-base-rgb:var(--ion-color-whats-rgb:)!important;
+	--ion-color-base-contrast:var(--ion-color-whats-contrast)!important;
+	--ion-color-base-contrast-rgb:var(--ion-color-whats-contrast-rgb)!important;
+	--ion-color-base-shade:var(--ion-color-whats-shade)!important;
+	--ion-color-base-tint:var(--ion-color-whats-tint)!important;
+}

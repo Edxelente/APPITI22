@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'datetime',
     loadChildren: () => import('./pagina/datetime/datetime.module').then( m => m.DatetimePageModule)
   },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pagina/grid/grid.module').then( m => m.GridPageModule)
+  },
 
 
 ];

@@ -48,6 +48,11 @@ export class InicioPage {
       redirectTo: '/fab',
       icon: 'list-outline'
     },
+      {
+      name: 'Grid',
+      redirectTo: '/grid',
+      icon: 'grid-outline'
+    },
         {
       name: 'Prueba',
       redirectTo: '',
