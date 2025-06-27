@@ -17,10 +17,10 @@ interface estlista {
 })
 export class InicioPage {
 
-  /*constructor() { }
+constructor() { }
 
   ngOnInit() {
-  }*/
+  }
 
   Elementos: estlista[] = [
     {
@@ -46,7 +46,7 @@ export class InicioPage {
     {
       name: 'Fab',
       redirectTo: '/fab',
-      icon: 'list-outline'
+      icon: 'chevron-up-circle-outline'
     },
       {
       name: 'Grid',
@@ -54,10 +54,20 @@ export class InicioPage {
       icon: 'grid-outline'
     },
         {
+      name: 'Infinite Scroll',
+      redirectTo: '/infinitescroll',
+      icon: 'infinite-outline'
+    },
+          {
+      name: 'Inputs',
+      redirectTo: '/inputs',
+      icon: 'enter-outline'
+    },
+        {
       name: 'Prueba',
       redirectTo: '',
       icon: 'document-outline'
-    },
+    },       
         {
       name: 'Prueba',
       redirectTo: '',

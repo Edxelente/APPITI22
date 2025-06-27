@@ -34,14 +34,23 @@ const routes: Routes = [
   {
     path: 'fab',
     loadChildren: () => import('./pagina/fab/fab.module').then( m => m.FabPageModule)
-  },  {
+  },
+  {
     path: 'datetime',
     loadChildren: () => import('./pagina/datetime/datetime.module').then( m => m.DatetimePageModule)
   },
   {
     path: 'grid',
     loadChildren: () => import('./pagina/grid/grid.module').then( m => m.GridPageModule)
+  },  {
+    path: 'infinitescroll',
+    loadChildren: () => import('./pagina/infinitescroll/infinitescroll.module').then( m => m.InfinitescrollPageModule)
   },
+  {
+    path: 'inputs',
+    loadChildren: () => import('./pagina/inputs/inputs.module').then( m => m.InputsPageModule)
+  },
+
 
 
 ];
