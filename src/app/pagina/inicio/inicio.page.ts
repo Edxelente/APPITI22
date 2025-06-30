@@ -63,16 +63,6 @@ constructor() { }
       redirectTo: '/inputs',
       icon: 'enter-outline'
     },
-        {
-      name: 'Prueba',
-      redirectTo: '',
-      icon: 'document-outline'
-    },       
-        {
-      name: 'Prueba',
-      redirectTo: '',
-      icon: 'document-outline'
-    },
   ]
 
 }

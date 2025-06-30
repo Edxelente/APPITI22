@@ -1,9 +1,34 @@
 <app-header titulo="Inputs"></app-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nombre" [(ngModel)]="alumnoActual.nombre"></ion-input>
+    </ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">inputs</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-item>
+      <ion-input label="Apellidos" [(ngModel)]="alumnoActual.apellidos"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fecha de Nacimiento</ion-label>
+      <ion-datetime 
+        displayFormat="DD/MM/YYYY" 
+        [(ngModel)]="alumnoActual.fechaNacimiento"
+        (ionChange)="calcularEdad()">
+      </ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Edad" [(ngModel)]="alumnoActual.edad" readonly></ion-input>
+      <ion-note slot="end">años</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Email" type="email" [(ngModel)]="alumnoActual.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Teléfono" type="tel" [(ngModel)]="alumnoActual.telefono"></ion-input>
+    </ion-item>
+  </ion-list>
 </ion-content>

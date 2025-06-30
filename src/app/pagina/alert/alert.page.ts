@@ -19,29 +19,26 @@ export class AlertPage implements OnInit {
        
   ngOnInit() {
   }
+
     async funcionAlerta1() {
     const alert = await this.alertController.create({
       header: 'A Short Title Is Best',
       subHeader: 'A Sub Header Is Optional',
       message: 'A message should be a short, complete sentence.',
       buttons: ['Action'],
-
-    
     });
     await alert.present();
-    
-    
   };
+
   async alertaPersonalizada() {
     const personalizada = await this.alertController.create({
       backdropDismiss: false,
       header: '¿Que quieres hacer con tu producto?',
       buttons: ['Guardar', 'Borrar', 'Cancelar'],
-
-    
     });
     await personalizada.present();
   };
+  
   async FormularioConsole() {
   const alert = await this.alertController.create({
     inputs: [
@@ -79,7 +76,6 @@ export class AlertPage implements OnInit {
       },
     ],
   });
-
   await alert.present();
 };
 
@@ -128,6 +124,5 @@ export class AlertPage implements OnInit {
   setResult(event: CustomEvent<OverlayEventDetail>) {
     console.log(`Dismissed with role: ${event.detail.role}`);
   }
-  
   
 }

@@ -1,13 +1,8 @@
 <app-header titulo="alerta"></app-header>
-
 <ion-content>
   <ion-button (click)="funcionAlerta1()">Click Me</ion-button>
-
   <ion-button (click)="alertaPersonalizada()">Alerta</ion-button>
-
   <ion-button (click)="FormularioConsole()">Formulario console</ion-button>
-
-
   <ion-button id="funcionInputs">Input</ion-button>
 <ion-alert
   trigger="funcionInputs"
@@ -15,8 +10,7 @@
   [buttons]="alertButtons"
   [inputs]="alertInputs"
 ></ion-alert>
-
-<ion-button id="funcionConsole">Cosole</ion-button>
+<ion-button id="funcionConsole">Console</ion-button>
 <ion-alert
   trigger="funcionConsole"
   header="Alert!"
@@ -24,30 +18,3 @@
   (didDismiss)="setResult($event)"
 ></ion-alert>
 </ion-content>
-
-
-
-
-
-
-
-
-<!-- 
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Alert</ion-title>
-    <ion-buttons slot="end">
-      <ion-back-button defaultHref="/inicio" text="Atras" color="tertiary"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Alert</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-button routerLink="/inicio">Inicio</ion-button>
-</ion-content> -->
