@@ -1,0 +1,15 @@
+<app-header titulo="Lista"></app-header>
+
+<ion-content>
+  <ion-list [inset]="true">
+    <ion-item *ngFor="let student of students">
+      <ion-avatar slot="start">
+        <img src="assets/ITI22/{{ student.id }}.JPG" alt="avatar" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ student.name }}</h2>
+        <p>{{ student.id }}{{'@'}}uprr.edu.mx</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

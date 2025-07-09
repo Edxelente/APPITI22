@@ -63,6 +63,22 @@ constructor() { }
       redirectTo: '/inputs',
       icon: 'enter-outline'
     },
+                  {
+      name: 'Modal',
+      redirectTo: '/modal',
+      icon: 'archive-outline'
+    },
+              {
+      name: 'Popover',
+      redirectTo: '/popover',
+      icon: 'notifications-circle-outline'
+    },
+                  {
+      name: 'List',
+      redirectTo: '/list',
+      icon: 'list-outline'
+    },
+
   ]
 
 }
