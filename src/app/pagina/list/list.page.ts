@@ -24,8 +24,8 @@ export class ListPage implements OnInit {
 
   students: Students[] = [
     {
-      'id': '202200014',
-      'name': 'Roberto Abdón Hernández García'
+      'id': '202200011',
+      'name': 'Claudia Edith Alvarez Olivo'
     },
     {
       'id': '202200017',
@@ -38,6 +38,10 @@ export class ListPage implements OnInit {
     {
       'id': '202200021',
       'name': 'Héctor Manuel Castro Zapata'
+    },
+     {
+      'id': '202200033',
+      'name': 'Selene Berenice Gámez León'
     },
     {
       'id': '202200081',
