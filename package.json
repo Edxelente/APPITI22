@@ -4,6 +4,7 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
+    "vercel-build": "npm install --legacy-peer-deps && npm run build",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
