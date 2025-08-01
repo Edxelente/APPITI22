@@ -1,6 +1,8 @@
-<app-header titulo="Fab"></app-header>
+<ion-header><app-header titulo="Fab"></app-header></ion-header>
 
- <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+<ion-content>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>
       <ion-icon name="chevron-up-circle"></ion-icon>
     </ion-fab-button>
@@ -14,7 +16,7 @@
       <ion-fab-button>
         <ion-icon name="logo-twitter" color="twitter"></ion-icon>
       </ion-fab-button>
-            <ion-fab-button>
+      <ion-fab-button>
         <ion-icon name="logo-linkedin" color="linke"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
@@ -22,6 +24,7 @@
 
   <ion-list>
     <ion-item *ngFor="let item of items; let i = index">
-      <ion-label>hola{{i+1}}</ion-label>
+      <ion-label>hola {{ i + 1 }}</ion-label>
     </ion-item>
   </ion-list>
+</ion-content>
