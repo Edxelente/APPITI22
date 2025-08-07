@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.edxelente.iti22;
 
 import com.getcapacitor.BridgeActivity;
 
