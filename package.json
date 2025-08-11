@@ -12,7 +12,7 @@
     "lint": "ng lint"
   },
   "private": true,
-    "dependencies": {
+  "dependencies": {
     "@angular/animations": "19.2.14",
     "@angular/common": "19.2.14",
     "@angular/compiler": "19.2.14",
@@ -24,18 +24,22 @@
     "@angular/service-worker": "19.2.14",
     "@capacitor/android": "7.2.0",
     "@capacitor/app": "7.0.1",
+    "@capacitor/camera": "^7.0.2",
     "@capacitor/core": "7.2.0",
+    "@capacitor/filesystem": "^7.1.4",
     "@capacitor/haptics": "7.0.1",
     "@capacitor/keyboard": "7.0.1",
+    "@capacitor/preferences": "^7.0.2",
     "@capacitor/status-bar": "7.0.1",
     "@ionic/angular": "^8.5.8",
+    "@ionic/pwa-elements": "^3.3.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "19.2.14",
+    "@angular-devkit/build-angular": "^19.2.15",
     "@angular/cli": "19.2.14",
     "@angular/compiler-cli": "19.2.14",
     "@angular/language-service": "19.2.14",

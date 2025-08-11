@@ -15,7 +15,7 @@ export class InfinitescrollPage implements OnInit {
  datos: any[] = [];
   totalItems = 28;
   ultimoItem = 0;
-  constructor() { 
+  constructor() {
         this.cargarDatosIniciales();
 
   }
@@ -26,23 +26,20 @@ export class InfinitescrollPage implements OnInit {
     this.ultimoItem = this.totalItems;
   }
 
-  cargarMasDatos(event: any) {
-    setTimeout(() => {
-      const nuevosDatos = 28; // Cantidad a cargar cada vez
-      
-      for (let i = 1; i <= nuevosDatos; i++) {
-        this.datos.push({ id: this.ultimoItem + i });
-      }
+cargarMasDatos(event: any) {
+  setTimeout(() => {
+    const nuevosDatos = 28; // Cantidad a cargar cada vez
 
-      this.ultimoItem += nuevosDatos;
-      event.target.complete();
+    for (let i = 1; i <= nuevosDatos; i++) {
+      this.datos.push({ id: this.ultimoItem + i });
+    }
 
-      // Opcional: Deshabilitar infinite scroll si se alcanza un límite
-      if (this.ultimoItem >= 100) { // Ejemplo: límite de 100 elementos
-        event.target.disabled = true;
-      }
-    }, 1000); // Simula delay de carga
-  }
+    this.ultimoItem += nuevosDatos;
+    event.target.complete();
+
+    // Quitar el límite → siempre seguirá cargando
+  }, 500); // Menos delay para que sea más fluido
+}
   ngOnInit() {
   }
 
