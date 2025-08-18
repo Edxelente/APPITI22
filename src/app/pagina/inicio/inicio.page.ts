@@ -79,9 +79,9 @@ constructor() { }
       icon: 'list-outline'
     },
 {
-     name: 'Home',
+     name: 'Notificación',
       redirectTo: '/home',
-      icon: 'list-outline'
+      icon: 'notifications-circle-outline'
     },
 
   ]
