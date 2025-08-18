@@ -1,3 +1,4 @@
+import { HomePage } from './pagina/home/home.page';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -63,7 +64,10 @@ const routes: Routes = [
     path: 'list',
     loadChildren: () => import('./pagina/list/list.module').then( m => m.ListPageModule)
   },
-
+  {
+    path: 'home',
+    loadComponent: () => import('./pagina/home/home.page').then( m => m.HomePage)
+  },
 
 
 ];
