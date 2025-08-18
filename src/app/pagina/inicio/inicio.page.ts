@@ -78,6 +78,11 @@ constructor() { }
       redirectTo: '/list',
       icon: 'list-outline'
     },
+{
+     name: 'Home',
+      redirectTo: '/home',
+      icon: 'list-outline'
+    },
 
   ]
 

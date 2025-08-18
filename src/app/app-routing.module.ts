@@ -6,7 +6,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'inicio',
     pathMatch: 'full'
-  },  
+  },
   {
     path: 'inicio',
     loadChildren: () => import('./pagina/inicio/inicio.module').then(m => m.InicioPageModule)
@@ -42,7 +42,8 @@ const routes: Routes = [
   {
     path: 'grid',
     loadChildren: () => import('./pagina/grid/grid.module').then( m => m.GridPageModule)
-  },  {
+  },
+  {
     path: 'infinitescroll',
     loadChildren: () => import('./pagina/infinitescroll/infinitescroll.module').then( m => m.InfinitescrollPageModule)
   },

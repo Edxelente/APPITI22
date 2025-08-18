@@ -15,7 +15,7 @@ import {
   IonLabel,
   ToastController
 } from '@ionic/angular/standalone';
-import moment from 'moment-timezone';
+import * as moment from 'moment-timezone';
 import { INotification } from 'src/app/models/notification.model';
 import { NotificationService } from 'src/app/services/notification.service';
 
