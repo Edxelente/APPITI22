@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "280944613203",
+    "project_id": "notificaciones-9ad61",
+    "storage_bucket": "notificaciones-9ad61.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280944613203:android:902ee953810305b3fc73a6",
+        "android_client_info": {
+          "package_name": "com.edxelente.iti22"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBSQkjCoOnZ35LJVJe4mPZj0M7FxlbwEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
