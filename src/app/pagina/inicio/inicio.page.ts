@@ -81,7 +81,7 @@ constructor() { }
 {
      name: 'Notificación',
       redirectTo: '/home',
-      icon: 'notifications-circle-outline'
+      icon: 'chatbox-ellipses-outline'
     },
 
   ]
