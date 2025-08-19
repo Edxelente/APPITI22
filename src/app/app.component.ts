@@ -15,7 +15,16 @@ private platform: Platform = inject(Platform);
 
 ngOnInit(): void {
   this.platform.ready().then(() => {
-    this.notificationService.init();
-  })
+    console.log('Plataforma lista, inicializando notificaciones...');
+    
+    // Esperar un poco para asegurar que la plataforma esté completamente lista
+    setTimeout(() => {
+      this.notificationService.init().then(() => {
+        console.log('✅ Notificaciones inicializadas correctamente');
+      }).catch((error) => {
+        console.error('❌ Error al inicializar notificaciones:', error);
+      });
+    }, 1000);
+  });
 }
 }

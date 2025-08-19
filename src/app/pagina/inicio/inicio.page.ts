@@ -80,7 +80,7 @@ constructor() { }
     },
 {
      name: 'Notificación',
-      redirectTo: '/home',
+      redirectTo: '/notification-test',
       icon: 'chatbox-ellipses-outline'
     },
 

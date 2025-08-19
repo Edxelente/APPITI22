@@ -65,6 +65,10 @@ const routes: Routes = [
     loadChildren: () => import('./pagina/list/list.module').then( m => m.ListPageModule)
   },
   {
+    path: 'notification-test',
+    loadChildren: () => import('./pagina/notification-test/notification-test.module').then( m => m.NotificationTestPageModule)
+  },
+  {
     path: 'home',
     loadComponent: () => import('./pagina/home/home.page').then( m => m.HomePage)
   },

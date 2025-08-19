@@ -11,6 +11,10 @@ const config: CapacitorConfig = {
     PushNotifications: {
       presentationOptions: ["badge", "sound", "alert"],
     },
+    OneSignal: {
+      mode: "development",
+      devTeam: "YOUR_DEVELOPER_TEAM_ID" // Reemplaza con tu Developer Team ID de Apple
+    }
   },
 };
 
