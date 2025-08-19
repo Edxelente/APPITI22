@@ -60,10 +60,16 @@
           Enviar Notificación de Prueba
         </ion-button>
 
-        <ion-button expand="block" (click)="sendCustomNotification()"
+                <ion-button expand="block" (click)="sendCustomNotification()" 
                    [disabled]="!isInitialized" color="success">
           <ion-icon name="create-outline" slot="start"></ion-icon>
           Enviar Notificación Personalizada
+        </ion-button>
+
+        <ion-button expand="block" (click)="testAPI()" 
+                   color="warning">
+          <ion-icon name="wifi-outline" slot="start"></ion-icon>
+          Probar Conexión API
         </ion-button>
       </ion-card-content>
     </ion-card>

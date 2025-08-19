@@ -19,8 +19,24 @@ export class NotificationTestPage implements OnInit {
     this.checkPermissionStatus();
   }
 
-  async checkPermissionStatus() {
+    async checkPermissionStatus() {
     this.permissionStatus = await this.notificationService.getPermissionStatus();
+    
+    // Verificar también el estado de OneSignal
+    const oneSignalStatus = await this.notificationService.checkOneSignalStatus();
+    console.log('Estado de OneSignal:', oneSignalStatus);
+    
+    if (!oneSignalStatus.initialized) {
+      console.warn('⚠️ OneSignal no está inicializado:', oneSignalStatus.error);
+    }
+
+    // Probar la conexión con la API de OneSignal
+    const apiTest = await this.notificationService.testOneSignalAPI();
+    console.log('Prueba de API OneSignal:', apiTest);
+    
+    if (!apiTest.success) {
+      console.error('❌ Error en API de OneSignal:', apiTest.error);
+    }
   }
 
   async initializeNotifications() {
@@ -56,7 +72,7 @@ export class NotificationTestPage implements OnInit {
     }
   }
 
-  async sendCustomNotification() {
+    async sendCustomNotification() {
     const customNotification: INotification = {
       title: 'Notificación Personalizada',
       body: 'Esta es una notificación personalizada enviada desde la app.',
@@ -65,13 +81,28 @@ export class NotificationTestPage implements OnInit {
     };
 
     this.testResult = 'Enviando notificación personalizada...';
-
+    
     try {
       const success = await this.notificationService.sendNotification(customNotification);
       if (success) {
         this.testResult = '✅ Notificación personalizada enviada exitosamente';
       } else {
         this.testResult = '❌ Error al enviar notificación personalizada';
+      }
+    } catch (error) {
+      this.testResult = `❌ Error: ${error}`;
+    }
+  }
+
+  async testAPI() {
+    this.testResult = 'Probando conexión con API de OneSignal...';
+    
+    try {
+      const result = await this.notificationService.testOneSignalAPI();
+      if (result.success) {
+        this.testResult = '✅ Conexión con API exitosa. App: ' + (result.response?.name || 'N/A');
+      } else {
+        this.testResult = '❌ Error en API: ' + result.error;
       }
     } catch (error) {
       this.testResult = `❌ Error: ${error}`;

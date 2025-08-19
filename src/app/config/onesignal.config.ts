@@ -7,8 +7,9 @@ export interface OneSignalConfig {
 }
 
 export const ONESIGNAL_CONFIG: OneSignalConfig = {
+  // ⚠️ IMPORTANTE: Reemplaza estas credenciales con las correctas de tu panel de OneSignal
   appId: '3443b123-590f-4c94-974d-1f0c6b9838ec',
-  restApiKey: 'os_v2_app_pm5zb6ss75gmvfnnu7f3tm7qpblc6rmwicfutuumcaaz3da4vgij6rhunfkq3ylf35xd6xh22grhpkvu7lpilp6kxgahxfc22js3a6a',
+  restApiKey: 'os_v2_app_grb3ci2zb5gjjf2nd4ggxgby5ra7oyr4wqzemgf73tuoywqgzq4sth32mlqmceaspgrz74gj456l37inu4q2m3pvevdhxvazdc2oemy',
   defaultChannelId: 'default',
   defaultChannelName: 'Notificaciones Generales',
   defaultChannelDescription: 'Canal para notificaciones generales de la aplicación'
@@ -32,6 +33,8 @@ export const NOTIFICATION_TTL = {
   THREE_DAYS: 259200,
   ONE_WEEK: 604800
 };
+
+
 
 
 
