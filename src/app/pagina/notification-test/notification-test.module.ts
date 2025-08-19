@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { NotificationTestPageRoutingModule } from './notification-test-routing.module';
 import { NotificationTestPage } from './notification-test.page';
+import { ComponentesModule } from 'src/app/componentes/componentes.module';
 
 @NgModule({
   imports: [
@@ -11,6 +12,7 @@ import { NotificationTestPage } from './notification-test.page';
     FormsModule,
     IonicModule,
     NotificationTestPageRoutingModule,
+    ComponentesModule
   ],
   declarations: [NotificationTestPage],
 })

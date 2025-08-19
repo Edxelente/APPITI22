@@ -1,4 +1,3 @@
-import { HomePage } from './pagina/home/home.page';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -68,11 +67,6 @@ const routes: Routes = [
     path: 'notification-test',
     loadChildren: () => import('./pagina/notification-test/notification-test.module').then( m => m.NotificationTestPageModule)
   },
-  {
-    path: 'home',
-    loadComponent: () => import('./pagina/home/home.page').then( m => m.HomePage)
-  },
-
 
 ];
 @NgModule({
