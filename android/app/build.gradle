@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     namespace "com.edxelente.iti22"
     compileSdk rootProject.ext.compileSdkVersion
+    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.edxelente.iti22"
         minSdkVersion rootProject.ext.minSdkVersion
